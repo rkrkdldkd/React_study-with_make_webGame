@@ -1,5 +1,5 @@
 const React = require("react");
-const { PureComponent } = React;
+const { PureComponent} = React;
 
 class Ball extends PureComponent {
   render() {
