@@ -1,10 +1,12 @@
 const React = require('react');
 const Td = require('./Td');
 
-const Td = () => {
+const Tr = ({rowData}) => {
     return (
-        <Td>{' '}</Td>
+        <tr>
+        {Array(rowData.length).fill().map((td) =><Td/> )}
+        </tr>
     )
 };
 
-module.exports = Td;
+module.exports = Tr;
