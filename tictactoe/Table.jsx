@@ -1,12 +1,17 @@
-const React = require('react');
-const Tr = require('./Tr');
+import React from 'react';
+import Tr from './Tr';
 
-const Table = ({onClick,tableData,dispatch}) => {
+const Table = ({test,TableData}) => {
+   
+
     return (
-        <table onClick = {onClick}>
-        {Array(tableData.length).fill().map((tr,i) => (<Tr dispatch = {dispatch} rowIndex = {i} rowData = {tableData[i]}/>))}
-        </table>
+       <table>
+           <tbody>
+            <Tr test = {test}/>
+           </tbody>
+       </table>
     )
-}
 
-module.exports = Table;
+};
+
+export default Table;

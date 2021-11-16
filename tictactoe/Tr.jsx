@@ -1,12 +1,15 @@
-const React = require('react');
-const Td = require('./Td');
+import React from 'react';
+import Td from './Td';
 
-const Tr = ({rowIndex,rowData,dispatch}) => {
+const Tr = ({test}) => {
+   
+
     return (
-        <tr>
-        {Array(rowData.length).fill().map((td,i) =><Td dispatch = {dispatch} rowIndex = {rowIndex} cellData = {rowData[i]} cellIndex = {i}/> )}
-        </tr>
+       <tr>
+        <Td test = {test}/>
+       </tr>
     )
+
 };
 
-module.exports = Tr;
+export default Tr;
